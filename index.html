@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - Tuition Planning Tool - Formatted</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <head>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+</head> 
+
+<h1><img src="https://static1.squarespace.com/static/ta/522a22cbe4b04681b0bff826/2244/assets/img/hrhq-logo@2x.png"><br>TUITION PLANNING TOOL</h1>
+
+<table cellpadding="10">
+
+    <tr>
+    <td colspan="2">
+<div align="center">
+    <input type="button" value="&#xf055 Add Row"; onclick="addList('TuitionTable')"/>
+
+ <input type="button" value="&#xf05e Delete Row" onclick="deleteList('TuitionTable')" /><P>
+    </div></td>
+  </tr>
+
+  <tr><td valign=top>
+
+     <table id="TuitionTable" width="350px" class="bordered">
+        <tr>
+          <th>Funding Description</th><th>Amount</th><th>Category</th><th>Delete?</th></tr>
+
+        </table>
+
+  </td><td valign=top>
+
+<table><tr><td>
+<b>Tuition Due: 
+  </td><td style="text-align:right">
+   <b> $17,780
+  </td></tr>
+  <tr class="border_bottom"><td>
+    <b>Money Raised: </td><td style="text-align:right"><b>$<a id="tFunds"></a></td></tr>
+
+    <tr class="border_bottom"><td>
+    <b>Amount Left: </td><td style="text-align:right"><b><a id="status"></a>$<a id="amountLeft"></a></td></tr>
+
+  <tr> <td colspan="2"><p></td></tr>
+
+  <tr class="border_bottom"><td><b>Summary</td><td></td></tr>
+
+  <tr class="border_bottom"><td><b># of Sources: <a id="pTotal"></a></td><td style="text-align:right"></td>
+    <tr><td>
+    <b>[<a id="otherCatNum"></a>] Other</td><td style="text-align:right"><b>$<a id="otherCat"></td></tr>
+        <tr><td>
+          <b>[<a id="ccCatNum"></a>] Credit</td><td style="text-align:right"><b>$<a id="ccCat"></td></tr>
+            <tr><td>
+    <b>[<a id="loansCatNum"></a>] Loans</td><td style="text-align:right"><b>$<a id="loansCat"></td></tr>
+                <tr><td>
+    <b>[<a id="assetsCatNum"></a>] Assets</td><td style="text-align:right"><b>$<a id="assetsCat"></td></tr>
+                    <tr><td>
+    <b>[<a id="cashCatNum"></a>] Cash</td><td style="text-align:right"><b>$<a id="cashCat"></td></tr>
+
+  </table>
+
+  </tr></td>
+
+</table>
+
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>
